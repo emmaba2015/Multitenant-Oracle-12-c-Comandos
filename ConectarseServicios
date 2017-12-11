@@ -1,0 +1,8 @@
+SQL> -- EZCONNECT
+
+SQL> CONN system/password@//localhost:1521/cdb1
+Connected.
+
+SQL> -- tnsnames.ora
+SQL> CONN system/password@cdb1
+Connected.
