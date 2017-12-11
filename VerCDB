@@ -1,0 +1,28 @@
+-- Para ver en el CDB en el que estoy parado
+SQL> SHOW CON_NAME
+
+CON_NAME
+------------------------------
+CDB$ROOT
+SQL>
+
+SQL> SHOW CON_ID
+CON_ID
+------------------------------
+1
+
+-- Se puede usar tambien:
+
+SELECT SYS_CONTEXT('USERENV', 'CON_NAME')
+FROM   dual;
+
+SYS_CONTEXT('USERENV','CON_NAME')
+--------------------------------------------------------------------------------
+CDB$ROOT
+
+SELECT SYS_CONTEXT('USERENV', 'CON_ID')
+FROM   dual;
+
+SYS_CONTEXT('USERENV','CON_ID')
+--------------------------------------------------------------------------------
+1
