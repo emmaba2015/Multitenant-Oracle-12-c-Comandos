@@ -1,0 +1,19 @@
+-- Para poder pararme y camibar a otro PDB - CDB
+SQL> ALTER SESSION SET container = pdb1;
+
+Session altered.
+
+SQL> SHOW CON_NAME
+
+CON_NAME
+------------------------------
+PDB1
+SQL> ALTER SESSION SET container = cdb$root;
+
+Session altered.
+
+SQL> SHOW CON_NAME
+
+CON_NAME
+------------------------------
+CDB$ROOT
