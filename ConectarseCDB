@@ -1,0 +1,7 @@
+-- Conexion a un cdb en Oracle 12 c
+export ORACLE_SID=cdb1
+sqlplus / as sysdba
+
+-- Cambiar de usuario
+SQL> CONN system/password
+Connected.
